@@ -1,0 +1,41 @@
+{
+	"customizationSuffix": "Metallic-1.00",
+	"themes": [
+		{
+			"name": "default",
+			"title": "Platinum",
+			"uses": ["platform/browser", "platform/desktop", "common"]
+		},
+		{
+			"name": "gold",
+			"title": "Gold",
+			"uses": ["colors/gold"]
+		},
+		{
+			"name": "silver",
+			"title": "Silver",
+			"uses": ["colors/silver"]
+		},
+		{
+			"name": "copper",
+			"title": "Copper",
+			"uses": ["colors/copper"]
+		},
+		{
+			"name": "default_mobile",
+			"title": "Default",
+			"uses": ["platform/browser", "platform/mobile", "common"]
+		},
+		{
+			"name": "ur_default",
+			"title": "UR Silver",
+			"uses": ["colors/ur"],
+			"conditions":["isUR"]
+		},
+		{
+			"name": "dark",
+			"title": "Dark",
+			"uses": ["colors/dark"]
+		}
+	]
+}

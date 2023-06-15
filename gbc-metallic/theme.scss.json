@@ -1,0 +1,58 @@
+{
+	"theme-disable-context-menu": false,
+
+	"gbc-ChromeBarWidget-height": "22px",
+	"gbc-ChromeBarWidget-visible-items": "about uploadStatus runtimeStatus settings",
+
+	"theme-font-family": "'Roboto, Helvetica, sans-serif'",
+	"theme-font-size-ratio": ".9",
+	"theme-margin-ratio": ".8",
+	"theme-combobox-padding": "0px",
+	"theme-sidebar-always-visible-min-width": "1921px",
+	"theme-host-action-default-height": "26px",
+	"theme-field-default-height": "26px",
+	"theme-message-display-time": 10,
+	"theme-error-display-time": 20,
+
+	"gbc-TableWidget-margin-ratio": ".4",
+	"gbc-TopMenuWidget-vertical-padding": "4px",
+	"gbc-TopMenuWidget-horizontal-padding": "8px",
+	"gbc-TopMenuWidget-line-height": "18px",
+
+	"mt-field-border-width-top": "1px",
+	"mt-field-border-width-right": "1px",
+	"mt-field-border-width-bottom": "1px",
+	"mt-field-border-width-left": "1px",
+	"mt-button-margin-ratio": ".6",
+	"mt-progress-height": "20px",
+
+	"njm-toolbar-padding": "6px",
+
+	"palette-primary": "#d5d7e5",
+	"palette-secondary": "#eee",
+	"palette-text-secondary": "$mt-black",
+
+	"theme-primary-background-color": "$palette-primary-800",
+	"theme-primary-emphasis-background-color": "$palette-primary-900",
+	"theme-primary-faded-background-color": "$palette-primary-100",
+	"theme-primary-color": "$palette-secondary-50",
+	"theme-secondary-color": "$palette-text-secondary-100",
+	"theme-header-color": "$palette-secondary-200",
+	"theme-currentrow-background-color": "$palette-primary-400",
+	"theme-currentrow-color": "$mt-white",
+
+	"mt-field-border-color": "$theme-primary-background-color",
+
+	"gbc-ButtonWidget-color": "$mt-white",
+	"mt-button-primary-emphasis-background-color": "$palette-primary-700",
+	"mt-button-primary-background-color": "$palette-primary-600",
+	"mt-button-primary-color": "$mt-black",
+	"mt-button-disabled-color": "$palette-primary-100",
+
+	"mt-toolbar-background-color": "$palette-primary-900",
+
+	"mt-progress-background-color": "$mt-white",
+	"mt-progress-color": "$palette-primary-400",
+
+	"njm-button-border-color": "$palette-primary-200"
+}

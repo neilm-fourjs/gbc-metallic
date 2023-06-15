@@ -1,0 +1,232 @@
+
+BODY {
+	-webkit-font-smoothing: antialiased;
+}
+
+.gbc_SessionEndWidget {
+	background: linear-gradient( $gbc-primary-color, $gbc-secondary-background-color );
+}
+
+// FIELDS ////////////////////////////////////////////////////////////////////////////
+// remove the box shadows from fields.
+.mt-field {
+	box-shadow: none;
+}
+// make current field stand out more.
+.mt-field.gbc_Focus {
+	border-left: 1px solid $mt-field-border-color;
+	border-right: 1px solid $mt-field-border-color;
+	border-top: 1px solid $mt-field-border-color;
+	border-bottom: 2px solid $mt-button-primary-background-color;
+	box-shadow: none;
+}
+// Combobox
+.zmdi-menu-down:before, .toggle[__ComboBoxWidget]:before, .toggle.dd-open[__ComboBoxWidget]:before {
+	content: "\F0140";
+	font-size: 20px;
+}
+// Calendar
+.zmdi-calendar-blank:before {
+	content: "\F0E17";
+	font-size: 20px;
+}
+.pika-title {
+	padding: 2px;
+}
+// try and make the buttonEdit button actually look like it's part of the Edit field
+.gbc_ButtonEditWidget, .gbc_DummyButtonEditWidget {
+	.mt-button {
+		background-color: transparent;
+		border-top: 1px solid $mt-field-border-color;
+		border-left: 0px solid $mt-field-border-color;
+		border-bottom: 1px solid $mt-field-border-color;
+		border-right: 1px solid $mt-field-border-color;
+		padding-right: 0px;
+		.textimage > .gbc_imageContainer > .gbc_ImageWidget {
+			fill: $palette-text-secondary;
+		}
+	}
+}
+.gbc_ButtonEditWidget.gbc_Focus > .gbc_EditWidget, .gbc_DummyButtonEditWidget.gbc_Focus > .gbc_EditWidget {
+	border-right: 0px solid $mt-field-border-color;
+	border-left: 1px solid $mt-field-border-color;
+	border-top: 1px solid $mt-field-border-color;
+	border-bottom: 2px solid $mt-button-primary-background-color;
+	box-shadow: none;
+	background-color: $palette-primary-50;
+}
+.gbc_ButtonEditWidget .mt-field, .gbc_DummyButtonEditWidget .mt-field {
+	border-right: 0px solid $mt-field-border-color;
+}
+//////////////////////////////////////////////////////////////////////////////////////
+
+// BUTTONS	//////////////////////////////////////////////////////////////////////////
+// improve look of buttons
+.mt-button {
+	border: 1px solid $palette-primary;
+	box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.14);
+	background: linear-gradient( to bottom, $palette-primary, $palette-secondary, $palette-primary) !important;
+}
+
+[__ButtonWidget].mt-button .textimage > .gbc_imageContainer > .gbc_ImageWidget {
+	fill: $mt-button-primary-color;
+}
+
+.gbc_ButtonWidget {
+	&.hasText .mt-button {
+		padding-right: 5px;
+	}
+}
+[__ButtonWidget].hasImage span[__ButtonWidget] {
+	margin-left: 0px;
+}
+.gbc_ButtonWidget.gbc_Focus > .mt-button {
+	background: linear-gradient( to bottom, $palette-primary, $palette-secondary, $palette-primary) !important;
+}
+//////////////////////////////////////////////////////////////////////////////////////
+
+// FOLDERS ///////////////////////////////////////////////////////////////////////////
+// get rid of ugly empty folder nav butons
+.mt-tab-previous, .mt-tab-next {
+	&.vanished {
+		display: none;
+	}
+}
+// Reduce padding on Folder
+.gbc_FolderWidget {
+	padding: 2px;
+}
+// Reduce the height of th Folder tab heading bar.
+.mt-tab-titles-bar[__FolderWidget=top], .mt-tab-titles-bar[__FolderWidget=bottom] {
+	height: 26px;
+}
+// make the Page tabs visible and match the folder accordian tab headings
+.mt-tab-titles-bar[__FolderWidget] .mt-tab-title {
+	background: linear-gradient( to bottom, $palette-primary, $palette-secondary, $palette-primary) !important;
+	opacity: .6;
+}
+.mt-tab-titles-bar[__FolderWidget] .mt-tab-title.mt-tab-current {
+	opacity: 1;
+}
+
+
+.gbc_AccordionFolderWidget .gbc_AccordionElement > .gbc_PageTitleWidget {
+	background: linear-gradient( to bottom, $palette-primary, $palette-secondary, $palette-primary) !important;
+}
+//////////////////////////////////////////////////////////////////////////////////////
+
+// TABLES ////////////////////////////////////////////////////////////////////////////
+// by default the ListView has no current row highlight ?
+.gbc_ListViewWidget {
+	&.gbc_Focus .currentRow {
+		background-color: $gbc-TableWidget-currentRow-background-color !important;
+		color: $gbc-TableWidget-currentRow-color !important;
+		fill: $gbc-TableWidget-currentRow-color;
+	}
+	&:not(.gbc_Focus) .currentRow {
+		background-color: $gbc-TableWidget-unfocused-currentRow-background-color !important;
+		color: $gbc-TableWidget-unfocused-currentRow-color !important;
+		fill: $gbc-TableWidget-unfocused-currentRow-color;
+	}
+}
+.gbc_ListViewRowWidget > .gbc_ListViewRowImage > .gbc_ImageWidget {
+	padding: 2px;
+}
+// default table doesn't show up well if it's in a group or folder page
+.gbc_RTableWidget[viewType="classic"] {
+// Can't use varible for variables!!
+	--headerHeight: 1.6em;
+	border-top: $mt-field-border-color solid 1px;
+	border-left: $mt-field-border-color solid 1px;
+}
+//////////////////////////////////////////////////////////////////////////////////////
+
+// GROUPS ////////////////////////////////////////////////////////////////////////////
+// make the Group title bar visible and match the folder accordian tab headings
+.gbc_GroupWidgetContainer {
+	box-shadow: none;
+}
+.gbc_GroupWidget {
+	//border: $mt-field-border-color solid 1px;
+	border-radius: 0.2rem;
+	padding: 0px;
+	background-color: transparent;
+}
+.gbc_GroupTitleWidget {
+//	background-color: $theme-header-color;
+	border-bottom: $mt-field-border-color solid 1px;
+	color: $mt-field-border-color;
+	margin-bottom: 2px;
+	.gbc-label-text-container {
+		padding-left: 5px;
+		line-height: 1.3em;
+		font-size: 1.2em;
+	}
+	.zmdi-hc-2x {
+		font-size: 1.5em;
+	}
+}
+//////////////////////////////////////////////////////////////////////////////////////
+
+// DIALOG WINDOWS ////////////////////////////////////////////////////////////////////
+// make the dialog window title bar more visible and like a window title bar.
+.mt-dialog-header {
+	background: linear-gradient( to bottom, $palette-primary, $palette-secondary, $palette-primary) !important;
+	color: $mt-toolbar-color;
+	fill: $mt-toolbar-color;
+}
+// reduce the excessive padding on the dialog window title bar.
+.gbc_ModalWidget .mt-dialog-header {
+	padding: 5px 2px 5px 2px;
+}
+.gbc_ModalMenuDialog {
+	.mt-dialog-header {
+		padding: 2px !important;
+	}
+	.mt-dialog-pane {
+		padding: 2px !important;
+		.mt-dialog-content {
+			padding: 4px !important;
+		}
+	}
+}
+//////////////////////////////////////////////////////////////////////////////////////
+// Toolbar
+
+// get rid of empty toolbar nav butons
+//.gbc_ToolBarWidget .mt-tab-previous, .gbc_ToolBarWidget .mt-tab-next {
+//  width: 20px;
+//  &.vanished {
+//    width: 1px;
+//  }
+//}
+
+// get rid of extra 32px padding on the left ?
+//.gbc_ChromeBarWidget.mt-toolbar .mt-toolbar-title {
+//  padding-left: 2px;
+//}￼
+
+// metalic background
+.gbc_WindowWidget .gbc_WindowToolbarContainer {
+	background: linear-gradient( to bottom, $palette-primary, $palette-secondary, $palette-primary) !important;
+}
+
+body.is-not-mobile-device .gbc_ToolBarItemWidget.mt-item:not(.disabled):hover, body.is-not-touch-device .gbc_ToolBarItemWidget.mt-item:not(.disabled):hover, body.is-not-mobile-device .gbc_ToolBarItemWidget.mt-item[interruptable][interruptable-active]:hover, body.is-not-touch-device .gbc_ToolBarItemWidget.mt-item[interruptable][interruptable-active]:hover {
+	background: linear-gradient( to bottom, $palette-secondary, $palette-primary, $palette-primary);
+}
+//////////////////////////////////////////////////////////////////////////////////////
+
+// MISC ////////////////////////////////////////////////////////////////////////////
+// make the programbar visible but adding a border.
+.mt-progress { 
+	border: 1px solid $palette-primary;
+	padding: 1px;
+	margin: 2px
+}
+// Make the loadbar at the top of the screen more visible
+.loading-bar {
+	height: 5px;
+}
+
+
+
