@@ -43,7 +43,7 @@ BODY {
 		border-right: 1px solid $mt-field-border-color;
 		padding-right: 0px;
 		.textimage > .gbc_imageContainer > .gbc_ImageWidget {
-			fill: $palette-text-secondary;
+			fill: $mt-button-primary-color;
 		}
 	}
 }
@@ -104,14 +104,19 @@ BODY {
 .mt-tab-titles-bar[__FolderWidget] .mt-tab-title {
 	background: linear-gradient( to bottom, $palette-primary, $palette-secondary, $palette-primary) !important;
 	opacity: .6;
+	&.mt-tab-current {
+		color: $palette-text-primary;
+		fill: $palette-text-primary;
+	}
 }
 .mt-tab-titles-bar[__FolderWidget] .mt-tab-title.mt-tab-current {
 	opacity: 1;
 }
 
-
 .gbc_AccordionFolderWidget .gbc_AccordionElement > .gbc_PageTitleWidget {
 	background: linear-gradient( to bottom, $palette-primary, $palette-secondary, $palette-primary) !important;
+	color: $palette-text-primary;
+	fill: $palette-text-primary;
 }
 //////////////////////////////////////////////////////////////////////////////////////
 
@@ -155,7 +160,7 @@ BODY {
 .gbc_GroupTitleWidget {
 //	background-color: $theme-header-color;
 	border-bottom: $mt-field-border-color solid 1px;
-	color: $mt-field-border-color;
+	color: $palette-text-primary;
 	margin-bottom: 2px;
 	.gbc-label-text-container {
 		padding-left: 5px;
@@ -171,9 +176,9 @@ BODY {
 // DIALOG WINDOWS ////////////////////////////////////////////////////////////////////
 // make the dialog window title bar more visible and like a window title bar.
 .mt-dialog-header {
-	background: linear-gradient( to bottom, $palette-primary, $palette-secondary, $palette-primary) !important;
-	color: $mt-toolbar-color;
-	fill: $mt-toolbar-color;
+	background: $theme-primary-emphasis-background-color;
+	color: $palette-text-primary;
+	fill: $palette-text-primary;
 }
 // reduce the excessive padding on the dialog window title bar.
 .gbc_ModalWidget .mt-dialog-header {
@@ -193,22 +198,11 @@ BODY {
 //////////////////////////////////////////////////////////////////////////////////////
 // Toolbar
 
-// get rid of empty toolbar nav butons
-//.gbc_ToolBarWidget .mt-tab-previous, .gbc_ToolBarWidget .mt-tab-next {
-//  width: 20px;
-//  &.vanished {
-//    width: 1px;
-//  }
-//}
-
-// get rid of extra 32px padding on the left ?
-//.gbc_ChromeBarWidget.mt-toolbar .mt-toolbar-title {
-//  padding-left: 2px;
-//}￼
-
 // metalic background
 .gbc_WindowWidget .gbc_WindowToolbarContainer {
 	background: linear-gradient( to bottom, $palette-primary, $palette-secondary, $palette-primary) !important;
+	color: $palette-text-primary;
+	fill: $palette-text-primary;
 }
 
 body.is-not-mobile-device .gbc_ToolBarItemWidget.mt-item:not(.disabled):hover, body.is-not-touch-device .gbc_ToolBarItemWidget.mt-item:not(.disabled):hover, body.is-not-mobile-device .gbc_ToolBarItemWidget.mt-item[interruptable][interruptable-active]:hover, body.is-not-touch-device .gbc_ToolBarItemWidget.mt-item[interruptable][interruptable-active]:hover {
@@ -227,6 +221,4 @@ body.is-not-mobile-device .gbc_ToolBarItemWidget.mt-item:not(.disabled):hover, b
 .loading-bar {
 	height: 5px;
 }
-
-
 
