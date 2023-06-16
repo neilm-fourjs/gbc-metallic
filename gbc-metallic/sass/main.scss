@@ -43,7 +43,7 @@ BODY {
 		border-right: 1px solid $mt-field-border-color;
 		padding-right: 0px;
 		.textimage > .gbc_imageContainer > .gbc_ImageWidget {
-			fill: $mt-button-primary-color;
+			fill: $palette-text-primary;
 		}
 	}
 }
@@ -69,7 +69,7 @@ BODY {
 }
 
 [__ButtonWidget].mt-button .textimage > .gbc_imageContainer > .gbc_ImageWidget {
-	fill: $mt-button-primary-color;
+	fill: $palette-text-primary;
 }
 
 .gbc_ButtonWidget {
@@ -176,7 +176,7 @@ BODY {
 // DIALOG WINDOWS ////////////////////////////////////////////////////////////////////
 // make the dialog window title bar more visible and like a window title bar.
 .mt-dialog-header {
-	background: $theme-primary-emphasis-background-color;
+	background-color: $theme-primary-emphasis-background-color;
 	color: $palette-text-primary;
 	fill: $palette-text-primary;
 }
