@@ -22,17 +22,17 @@ $ make
 ```
 
 ## Platinum
-![ss1](https://github.com/neilm-fourjs/gbc-metallic/tree/main/screenshots/m0.png "SS1")
+![ss1](https://raw.githubusercontent.com/neilm-fourjs/gbc-metallic/main/screenshots/m0.png "SS1")
 
 ## Gold
-![ss2](https://github.com/neilm-fourjs/gbc-metallic/tree/main/screenshots/m1.png "SS2")
+![ss2](https://raw.githubusercontent.com/neilm-fourjs/gbc-metallic/main/screenshots/m1.png "SS2")
 
 ## Silver
-![ss3](https://github.com/neilm-fourjs/gbc-metallic/tree/main/screenshots/m2.png "SS3")
+![ss3](https://raw.githubusercontent.com/neilm-fourjs/gbc-metallic/main/screenshots/m2.png "SS3")
 
 ## Copper
-![ss4](https://github.com/neilm-fourjs/gbc-metallic/tree/main/screenshots/m3.png "SS4")
+![ss4](https://raw.githubusercontent.com/neilm-fourjs/gbc-metallic/main/screenshots/m3.png "SS4")
 
 ## Dark
-![ss5](https://github.com/neilm-fourjs/gbc-metallic/tree/main/screenshots/m4.png "SS5")
+![ss5](https://raw.githubusercontent.com/neilm-fourjs/gbc-metallic/main/screenshots/m4.png "SS5")
 
