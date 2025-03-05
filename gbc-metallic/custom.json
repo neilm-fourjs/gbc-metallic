@@ -31,11 +31,6 @@
 			"title": "UR Silver",
 			"uses": ["colors/ur"],
 			"conditions":["isUR"]
-		},
-		{
-			"name": "dark",
-			"title": "Dark",
-			"uses": ["colors/dark"]
 		}
 	]
 }

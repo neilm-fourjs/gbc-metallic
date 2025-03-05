@@ -33,6 +33,3 @@ $ make
 ## Copper
 ![ss4](https://raw.githubusercontent.com/neilm-fourjs/gbc-metallic/main/screenshots/m3.png "SS4")
 
-## Dark
-![ss5](https://raw.githubusercontent.com/neilm-fourjs/gbc-metallic/main/screenshots/m4.png "SS5")
-
